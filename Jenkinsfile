@@ -1,3 +1,3 @@
 @Library('shareLibraries@main')_
-
-cronJob{infra = false}
+passVariable{infra = false}
+// cronJob{infra = false}
