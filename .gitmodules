@@ -1,7 +1,4 @@
-[submodule "test-cron-jobs"]
-	path = test-cron-jobs
-	url = https://github.com/sri008/test-cron-jobs.git
-	branch = dev
 [submodule "test02"]
 	path = test02
-	url = https://github.com/sri008/test-cron-jobs.git
+	url = git@github.com:sri008/test-cron-jobs.git	
+	branch = dev
