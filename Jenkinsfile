@@ -4,18 +4,19 @@
 // @Library('shareLibraries@build-dependency')
 // subModule{}
 @Library('shareLibraries@build-dependency')
-pipeline{
+
+pipeline {
     agent any
     stages {
-        stage('build'){
+        stage('build') {
             steps{
                 sh 'npm pack'
                 sh 'ls -l'
             }
         }
-        stage('Push to main repo'){
-            steps{
-                script{
+        stage('Push to main repo') {
+            steps {
+                script {
                     shareLibraries.subModule{}
                 }
             }
