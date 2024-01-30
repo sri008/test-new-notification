@@ -1,7 +1,7 @@
 // @Library('shareLibraries@main')_
 // passVariable{infra = false}
 // // cronJob{infra = false}
-// @Library('shareLibraries@build-dependency')_
+@Library('shareLibraries@build-dependency')
 // subModule{}
 pipeline{
     agent any
@@ -16,7 +16,7 @@ pipeline{
             steps{
                 script{
                     // Load the shared library from a specific branch using the BRANCH_NAME variable
-                    library "shareLibraries@build-dependency"
+                    //library "shareLibraries@build-dependency"
 
                     // Call the function from the shared library
                     shareLibraries.subModule()
