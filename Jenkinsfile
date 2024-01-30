@@ -3,7 +3,7 @@
 // // cronJob{infra = false}
 // @Library('shareLibraries@build-dependency')
 // subModule{}
-@Library('shareLibraries@build-dependency')
+@Library('shareLibraries@build-dependency') _
 
 pipeline {
     agent any
