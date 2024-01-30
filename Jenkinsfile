@@ -16,9 +16,7 @@ pipeline {
         }
         stage('Push to main repo') {
             steps {
-                script {
-                    subModule()
-                }
+                subModule()
             }
         }
     }
