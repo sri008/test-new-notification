@@ -15,10 +15,6 @@ pipeline{
         stage('Push to main repo'){
             steps{
                 script{
-                    // Load the shared library from a specific branch using the BRANCH_NAME variable
-                    //library "shareLibraries@build-dependency"
-
-                    // Call the function from the shared library
                     shareLibraries.subModule()
                 }
             }
