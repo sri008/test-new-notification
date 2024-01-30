@@ -17,7 +17,7 @@ pipeline {
         stage('Push to main repo') {
             steps {
                 script {
-                    shareLibraries.subModule{}
+                    shareLibraries.subModule()
                 }
             }
         }
