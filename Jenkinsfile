@@ -1,8 +1,9 @@
 // @Library('shareLibraries@main')_
 // passVariable{infra = false}
 // // cronJob{infra = false}
-@Library('shareLibraries@build-dependency')
+// @Library('shareLibraries@build-dependency')
 // subModule{}
+@Library('shareLibraries@build-dependency')
 pipeline{
     agent any
     stages {
@@ -15,7 +16,7 @@ pipeline{
         stage('Push to main repo'){
             steps{
                 script{
-                    shareLibraries.subModule()
+                    shareLibraries.subModule{}
                 }
             }
         }
