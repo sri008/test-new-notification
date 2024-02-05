@@ -16,7 +16,7 @@ pipeline {
         }
         stage('Push to main repo') {
             steps {
-                debug_subModfunc()
+                debug_subModfnc()
             }
         }
     }
